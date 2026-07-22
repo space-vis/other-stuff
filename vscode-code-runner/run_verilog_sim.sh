@@ -82,7 +82,6 @@ fi
 # -----------------------------------------------------------------------------
 mkdir -p "$SIM_DIR"
 
-TOPMODULE="$BASENAME"
 SIM_OUT="$SIM_DIR/sim.out"
 VCD_FILE="$SIM_DIR/dump.vcd"
 VCD_INJECT="$SIM_DIR/vcd_inject.v"
@@ -106,13 +105,11 @@ EOF
 echo "Project root : $PROJECT_ROOT"
 echo "Testbench    : $FILE"
 echo "Sources      : ${#SRC_FILES[@]} file(s) from src/"
-echo "Top module   : $TOPMODULE"
 echo ""
 echo "Compiling with Icarus Verilog..."
 
 if iverilog \
     -g2012 \
-    -s "$TOPMODULE" \
     -o "$SIM_OUT" \
     "${SRC_FILES[@]}" \
     "$FILE" \
