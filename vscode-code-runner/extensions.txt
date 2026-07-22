@@ -1,0 +1,12 @@
+formulahendry.code-runner
+
+llvm-vs-code-extensions.vscode-clangd
+ms-vscode.cmake-tools
+
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-python-envs
+
+mshr-h.veriloghdl
+surfer-project.surfer
+
