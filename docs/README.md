@@ -5,13 +5,14 @@ This is a repository for all the small projects I want to share but don't need t
 A small script to handle different kinds of code languages and in the case of verilog and systemverilog files compile and simulate with icarus verilog and either gtkwave or the surfer extension.
 
 See extensions.txt for all used extensions.
-
 For verilog/sv projects the folder structure is:
 Expected project structure:
-   my_project/
-   ├── src/   ← all design .v/.sv files
-   ├── tb/    ← testbench files (*_tb.v or *_tb.sv)
-   └── sim/   ← created automatically, all output goes here
+```text
+my_project/
+├── src/   ← all design .v/.sv files
+├── tb/    ← testbench files (*_tb.v or *_tb.sv)
+└── sim/   ← created automatically, all output goes here
+```
 
 The simulation is ran from the opened testbench file. 
 
